@@ -4,7 +4,7 @@ image_config: &image_config
   # either as project-specific environment variables
   # or as resources in your organization's org-global Context
 
-  IMAGE_NAME: ruby-2.0.0-p643
+  IMAGE_NAME: ruby
 
   IMAGE_TAG: 2.0.0-p643
 
