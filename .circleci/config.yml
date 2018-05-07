@@ -79,15 +79,3 @@ jobs:
 
       - store_artifacts:
           path: test_results
-
-workflows:
-  version: 2
-  dockerfile_wizard:
-    jobs:
-      - build:
-          context: org-global
-
-      - test_image:
-          context: org-global
-          requires:
-            - build
