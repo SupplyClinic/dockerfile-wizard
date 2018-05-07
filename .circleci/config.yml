@@ -13,23 +13,23 @@ image_config: &image_config
   # make sure you also add the values of your IMAGE_NAME & IMAGE_TAG variables
   # to the `test_image` job (line 55)
 
-  LINUX_VERSION: # DEBIAN_JESSIE, DEBIAN_STRETCH, UBUNTU_TRUSTY, or UBUNTU_XENIAL
+  LINUX_VERSION: UBUNTU_TRUSTY
 
   RUBY_VERSION_NUM: 2.0.0-p643
 
-  NODE_VERSION_NUM: # pick a version from https://nodejs.org/dist
+  # NODE_VERSION_NUM: # pick a version from https://nodejs.org/dist
 
-  PYTHON_VERSION_NUM: # pick a version from https://python.org/ftp/python
+  # PYTHON_VERSION_NUM: # pick a version from https://python.org/ftp/python
 
-  JAVA: # Java options: true, false
+  JAVA: false
 
-  MYSQL_CLIENT: # MySQL options: true, false
+  MYSQL_CLIENT: false
 
-  POSTGRES_CLIENT: # Postgres options: true, false
+  POSTGRES_CLIENT: true
 
-  DOCKERIZE: # Dockerize options: true, false
+  DOCKERIZE: false
 
-  BROWSERS: # browser tools (Xvfb, PhantomJS, Firefox, Chrome, Chromedriver): true, false
+  BROWSERS: true
 
 version: 2
 jobs:
@@ -54,7 +54,7 @@ jobs:
 
 ##  test_image:
 ##    docker:
-##      - image: $DOCKER_USERNAME/(name of image):(image tag)
+##      - image: $DOCKER_USERNAME/ruby-2.0.0-p643:2.0.0-p643
 ##        environment:
 ##          <<: *image_config
 
