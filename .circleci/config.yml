@@ -4,9 +4,9 @@ image_config: &image_config
   # either as project-specific environment variables
   # or as resources in your organization's org-global Context
 
-  IMAGE_NAME: # name your image (no spaces please!)
+  IMAGE_NAME: ruby-2.0.0-p643
 
-  IMAGE_TAG: # give your image a tag (no spaces please!)
+  IMAGE_TAG: 2.0.0-p643
 
   # NOTE: if you're modifying this config.yml file manually
   # rather than using the included setup script,
@@ -15,7 +15,7 @@ image_config: &image_config
 
   LINUX_VERSION: # DEBIAN_JESSIE, DEBIAN_STRETCH, UBUNTU_TRUSTY, or UBUNTU_XENIAL
 
-  RUBY_VERSION_NUM: # pick a version from https://cache.ruby-lang.org/pub/ruby
+  RUBY_VERSION_NUM: 2.0.0-p643
 
   NODE_VERSION_NUM: # pick a version from https://nodejs.org/dist
 
