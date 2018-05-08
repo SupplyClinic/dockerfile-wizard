@@ -17,7 +17,7 @@ image_config: &image_config
 
   RUBY_VERSION_NUM: 2.0.0-p643
 
-  # # NODE_VERSION_NUM: # pick a version from https://nodejs.org/dist
+  NODE_VERSION_NUM: v0.12.2
 
   # # PYTHON_VERSION_NUM: # pick a version from https://python.org/ftp/python
 
